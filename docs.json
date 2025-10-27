@@ -48,6 +48,17 @@
         ]
       },
       {
+        "tab": "Carebridge - backend",
+        "groups": [
+          {
+            "group": "Forbindelse til PostgreSQL",
+            "pages": [
+              "db/connection"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "API Endpoints",
         "groups": [
           {
