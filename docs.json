@@ -18,6 +18,12 @@
             "pages": [
               "db/connection"
             ]
+          },
+          {
+            "group": "Metoder/Funktioner",
+            "pages": [
+              "utils/logback"
+            ]
           }
         ]
       },

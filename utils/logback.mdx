@@ -1,0 +1,27 @@
+---
+title: "Forbedret logging med Logback"
+description: "I vores projekter bruger vi Logback som logging-framework, hvilket giver os fleksibel og struktureret logning. Logback bruges sammen med SLF4J, som fungerer som et standardiseret interface til logging."
+---
+
+```java
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class MyClass {
+    private static final Logger logger = LoggerFactory.getLogger(MyClass.class);
+
+    public void doSomething() {
+        logger.info("Info-besked");
+        logger.debug("Debug-besked med variabel: {}", 42);
+        logger.warn("Advarsel!");
+        logger.error("Noget gik galt!", new RuntimeException("Fejl eksempel"));
+    }
+}
+
+```
+
+### Tips til logging
+
+- Brug `info` til almindelig information og `debug` til detaljer til udvikling.
+- Brug `warn` og `error` til problemer og fejl.
+- Brug placeholders `{}` fremfor at bygge strings selv for bedre performance.
