@@ -48,7 +48,7 @@
         ]
       },
       {
-        "tab": "API Endpooints",
+        "tab": "API Endpoints",
         "groups": [
           {
             "group": "API Endpoints",
@@ -71,14 +71,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Frontend Repo",
+          "href": "https://github.com/Carebridge-org/Carebridge-frontend",
+          "icon": "square-github"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Backend Repo",
+          "href": "https://github.com/Carebridge-org/Carebridge-backend",
+          "icon": "square-github"
         }
       ]
     }
