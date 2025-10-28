@@ -1,0 +1,42 @@
+---
+title: "Carebridge - Routing | React Router DOM"
+description: "React Router DOM styrer navigationen i din single-page app (SPA) — dvs. at du kan skifte mellem sider uden at genindlæse hele siden."
+---
+
+### kort sagt
+
+- Du **definerer ruter (routes)** → som fortæller hvilken komponent, der skal vises for en given URL
+- Du **navigerer mellem dem** → med `<Link>`-komponenter (i stedet for `<a>`-tags)
+- React Router **håndterer URL’en** og **renderer den rigtige komponent** dynamisk
+
+### Eksempel | App.jsx
+
+```jsx
+import { Routes, Route, Link } from 'react-router-dom'
+//Import af vores sider/komponenter
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+
+function App() {
+  return (
+    <div>
+      {/* Navigation | Vores navbar */}
+      <nav>
+        <Link to="/">Home</Link> |{' '}
+        <Link to="/about">About</Link> |{' '}
+        <Link to="/contact">Contact</Link>
+      </nav>
+
+      {/* Her defineres dine ruter */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </div>
+  )
+}
+
+export default App
+```
