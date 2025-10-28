@@ -28,7 +28,15 @@
         ]
       },
       {
-        "tab": "Carebridge - frontend"
+        "tab": "Carebridge - Frontend",
+        "groups": [
+          {
+            "group": "Routing",
+            "pages": [
+              "frontend/react"
+            ]
+          }
+        ]
       },
       {
         "tab": "API Endpoints - Bliver opateret løbende",
